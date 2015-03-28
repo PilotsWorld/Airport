@@ -1,0 +1,30 @@
+{
+  "name": "pilots-world/airport",
+  "license": "MIT",
+  "type": "library",
+  "description": "Airport data",
+  "require": {
+    "php": ">=5.4",
+    "doctrine/common": "~2.4",
+    "nicolopignatelli/valueobjects": "~2.3"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.1",
+    "behat/behat": "~3.0",
+    "rmiller/behat-spec": "0.2.*",
+    "ciaranmcnulty/phpspec-typehintedmethods": "~1.01"
+  },
+  "autoload": {
+    "psr-4": {
+      "PilotsWorld\\Airport\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "spec\\PilotsWorld\\Airport\\": "spec/"
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}

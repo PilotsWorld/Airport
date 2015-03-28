@@ -1,0 +1,8 @@
+default:
+    suites:
+        domain:
+            contexts:
+                - Domain\AirportContext
+    extensions:
+        RMiller\BehatSpec\BehatExtension:
+            path:  bin/phpspec #default value is bin/phpspec

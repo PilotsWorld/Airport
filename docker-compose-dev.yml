@@ -1,0 +1,10 @@
+data:
+   image: busybox
+   volumes:
+     - .:/app:rw
+php:
+   extends:
+     file: docker-compose-common.yml
+     service: phpcli
+   volumes_from:
+     - data

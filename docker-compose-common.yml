@@ -1,0 +1,4 @@
+phpcli:
+   build: dockerfiles/php-cli
+   environment:
+     PHP_VERSION: 5.6

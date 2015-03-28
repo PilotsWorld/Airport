@@ -1,0 +1,7 @@
+suites:
+    airport:
+        namespace: PilotsWorld\Airport
+        psr4_prefix: PilotsWorld\Airport
+extensions:
+ - RMiller\BehatSpec\PhpSpecExtension
+ - Cjm\PhpSpec\Extension\TypeHintedMethodsExtension
