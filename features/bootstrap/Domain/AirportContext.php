@@ -4,6 +4,7 @@ namespace Domain;
 
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
+use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Gherkin\Node\TableNode;
 use PilotsWorld\Airport\Domain\UseCase\CreateAirportUseCase;
 use PilotsWorld\Airport\Domain\Model\AirportId;
@@ -33,7 +34,7 @@ class AirportContext implements Context, SnippetAcceptingContext
     }
 
     /**
-     * @When I request to create a new airport with:
+     * @When I request to create a new airports with:
      */
     public function iRequestToCreateANewAirportsWith(TableNode $table)
     {
@@ -54,8 +55,17 @@ class AirportContext implements Context, SnippetAcceptingContext
             }
             $airportId = new AirportId("airport-". $key);
             $userCommand = new CreateUserCommand($airportId, $useCase);
+            $this->userHandler->handle($userCommand);
         }
 
     }
+    /**
+     * @Then airport with code :code at :system  and name :airportName should be created
+     */
+    public function airportWithCodeAtAndNameShouldBeCreated($code, $system, $airportName)
+    {
+        throw new PendingException();
+    }
+
 
 }

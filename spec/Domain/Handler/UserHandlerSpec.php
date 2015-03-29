@@ -11,4 +11,9 @@ class UserHandlerSpec extends ObjectBehavior
     {
         $this->shouldHaveType('PilotsWorld\Airport\Domain\Handler\UserHandler');
     }
+
+    public function it_should_handle()
+    {
+        $this->handle();
+    }
 }

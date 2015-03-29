@@ -20,6 +20,4 @@ class CreateAirportUseCase
 
     public $timeZone;
 
-
-
 }

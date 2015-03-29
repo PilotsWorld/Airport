@@ -2,3 +2,4 @@ vendor
 bin
 behat.yml
 phpspec.yml
+build/

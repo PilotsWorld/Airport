@@ -26,6 +26,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 VOLUME ["/app"]
 WORKDIR /app
 
-# Set up the command arguments
-#CMD ["-"]
-#ENTRYPOINT ["composer", "--ansi"]
+COPY entrypoint.sh /
+RUN chmod 755  /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
