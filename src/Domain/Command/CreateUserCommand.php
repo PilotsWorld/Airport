@@ -13,6 +13,7 @@ class CreateUserCommand
 
     /**
      * CreateUserCommand constructor.
+     *
      * @param $airportId
      * @param $airFieldData
      */
@@ -21,5 +22,4 @@ class CreateUserCommand
         $this->airportId = $airportId;
         $this->airFieldData = $airFieldData;
     }
-
 }

@@ -19,5 +19,4 @@ class CreateAirportUseCase
     public $longitude;
 
     public $timeZone;
-
 }

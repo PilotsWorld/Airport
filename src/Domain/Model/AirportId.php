@@ -8,6 +8,7 @@ class AirportId
 
     /**
      * AirportId constructor.
+     *
      * @param $id
      */
     public function __construct($id)
@@ -22,5 +23,4 @@ class AirportId
     {
         return $this->id;
     }
-
 }
